@@ -16,5 +16,6 @@ require 'pry'
 
 def remove_strawberry(contacts)
 result = contacts ["Freddy Mercury"] [:favorite_ice_cream_flavors] << "strawberry"
+result.delete_if {|ice_cream| ice_cream == "strawberry"}
 contacts
 end
